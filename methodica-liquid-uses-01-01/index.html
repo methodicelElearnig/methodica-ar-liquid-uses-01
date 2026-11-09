@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-store">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>السوائل - الخصائص المشتركة والاستخدامات والتجربة العلمية (الهدف 16)</title>
+<link rel="stylesheet" href="../unit-assets/fonts/fonts.css?v=2026110801">
+  <link rel="stylesheet" href="../unit-css/styles.css?v=2026110801">
+</head>
+<body data-subject-theme="science">
+<div id="stage">
+<div id="app">
+  
+  <!-- Report/issue flag — the APPROVED chrome, copied verbatim from
+       shared/720-core/chrome/chrome-snippets.html. Do not restyle, do not
+       rebuild. The old PNG pair is gone: its hover export was a stale
+       SCIENCE-mode render (#019DE5), which is what made hover look wrong in
+       a maths unit. The glyph is live SVG driven by currentColor. -->
+  <button class="flag-btn" id="flag-btn" type="button" aria-label="هل وجدتم مشكلة؟">
+        <span class="flag-btn-icon">
+          <span class="flag-btn-glyph" aria-hidden="true">
+            <svg class="flag-btn-glyph-pole" viewBox="0 0 0.794329 17.0005" preserveAspectRatio="none" fill="none">
+              <path
+                d="M0.397164 17C0.177722 17 0 16.8239 0 16.6065V0.393501C0 0.176082 0.177722 0 0.397164 0C0.616607 0 0.794329 0.176082 0.794329 0.393501V16.607C0.794329 16.8245 0.616607 17.0005 0.397164 17.0005V17Z"
+                fill="currentColor" />
+            </svg>
+            <svg class="flag-btn-glyph-banner" viewBox="0 0 12 9.31542" preserveAspectRatio="none" fill="none">
+              <path
+                d="M2.76227 9.31542C1.91972 9.31542 1.06958 9.15545 0.213483 8.71363C0.0823588 8.64599 0 8.51124 0 8.36469V0.950975C0 0.814619 0.0715221 0.687925 0.188558 0.615989C0.305594 0.54459 0.45189 0.537611 0.574886 0.598811C0.577053 0.599884 0.578679 0.600958 0.580846 0.602032C2.31309 1.49586 4.05563 1.046 5.90003 0.569821C7.80946 0.0770055 9.78336 -0.431915 11.7865 0.601495C11.9176 0.669136 12 0.803882 12 0.950438V8.36415C12 8.4946 11.9344 8.617 11.8255 8.69001C11.7166 8.76302 11.5774 8.77805 11.4555 8.72974C11.443 8.7249 11.4311 8.71954 11.4197 8.71363C9.68745 7.8198 7.94491 8.26967 6.10051 8.7453C5.00709 9.02714 3.89199 9.31489 2.76281 9.31489L2.76227 9.31542ZM0.793787 8.11935C2.45559 8.87307 4.13094 8.44038 5.90003 7.98407C7.62469 7.53903 9.40191 7.08057 11.2062 7.75806V1.19631C9.54441 0.442591 7.86906 0.875281 6.09997 1.33159C4.37531 1.77663 2.59755 2.23509 0.793787 1.5576V8.11935Z"
+                fill="currentColor" />
+            </svg>
+          </span>
+        </span>
+        <span class="flag-btn-label">هل وجدتم مشكلة؟</span>
+      </button>
+
+  <!-- SCREENS — רכיב 1 · שקופיות 3-26 -->
+
+  <!-- ══ S0 — deck slide 3 · HOOK, countdown (VideoWatchAndContinue).
+       The countdown video ("ספירה לאחור שנעצרת ב 7") is NOT supplied yet —
+       the deck's still stands in its frame. First screen: no חזרה. ══ -->
+  <section class="screen" data-screen="0" id="s0">
+    <div class="lq-top-title">
+      <h1 class="ts-title">جاهزون للإقلاع؟</h1>
+      <p class="ts-title lq-countdown" dir="rtl">..7..8..9..10</p>
+    </div>
+    <!-- QA 25.10: the producer's countdown video (7s, stops at 00:07); the still is its poster -->
+    <video class="lq-photo lq-s0-photo" id="s0-video" src="assets/video/control-room-countdown.mp4" poster="assets/img/control-room-countdown.jpg" playsinline preload="auto" role="img" aria-label='غرفة التحكم: أشخاص يرتدون سماعات الرأس يجلسون أمام شاشات الحاسوب وينظرون إلى شاشة كبيرة تعرض مركبة فضائية على منصة الإطلاق، ومؤقت يشير إلى "00:07".' data-no-zoom></video>
+    <!-- 04.11: sound on/off for the countdown video (browsers start it muted until the first click) -->
+    <button type="button" class="applet-zoom-btn lq-sound-btn lq-s0-sound" id="s0-sound" data-video="s0-video" aria-pressed="false" aria-label="تشغيل الصوت" title="تشغيل الصوت">
+      <svg class="lq-snd-on" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg>
+      <svg class="lq-snd-off" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+    </button>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+  </section>
+
+  <!-- ══ S1 — deck slide 4 · השיגור נעצר! (TextWithCallout, no callout drawn) ══ -->
+  <section class="screen" data-screen="1" id="s1">
+    <h1 class="ts-title p3-title-top">توقف الإطلاق!</h1>
+    <img class="lq-photo lq-s1-photo" src="assets/img/control-room-low-flow.jpg" alt='الغرفة نفسها، غرفة التحكم. تعرض الشاشة الكبيرة خزاناً يحتوي على سائل أزرق متصل بالمحرك عبر أنبوب، وعلى الأنبوب مقياس مكتوب عليه "LOW FLOW" ومثلث تحذير أحمر.' data-no-zoom>
+    <p class="lq-s1-caption">رصد نظام التحكم عطلًا:<br><strong class="lq-alarm">يستغرق السائل وقتًا أطول من اللازم للوصول إلى المحرك.</strong></p>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(0)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S2 — deck slide 5 · מקור התקלה. Notes: "המלל עולה אחד אחרי השני"
+       (p3Stage s2, no gate — the deck draws המשך active). ══ -->
+  <section class="screen" data-screen="2" id="s2">
+    <h1 class="ts-title lq-title-right">مصدر العطل</h1>
+    <div class="lq-col-text">
+      <p class="p3-step-line">لتحديد مصدر العطل، فحص مهندسو الفضاء ثلاث عينات أُخذت<br>من نظام السوائل في المركبة الفضائية.</p>
+      <p class="p3-step-line">جميع العينات بدأت من النقطة نفسها، وفُحصت في أنابيب متطابقة، ولمدة الزمن نفسه.</p>
+      <p class="p3-step-line lq-icon-line"><img class="lq-line-icon" src="assets/img/stopwatch-icon.png" alt="" data-no-zoom>لاحظوا المسافة التي قطعتها كل عينة بعد 5 ثوانٍ.</p>
+    </div>
+    <figure class="lq-col-fig lq-s2-fig">
+      <img src="assets/img/tubes-flow.png" alt="ثلاثة أنابيب زجاجية متطابقة على حامل، وفي كل منها سائل بلون مختلف تقدّم من نقطة البداية نفسها: العينة أ الزرقاء تقدّمت أبعد مسافة، والعينة ب الصفراء مسافة أقلّ، والعينة ج البرتقالية أقصر مسافة.">
+      <!-- QA 28.10: each sample named beside its tube (blue א׳, yellow ב׳, orange ג׳) -->
+      <span class="lq-sample lq-sample--a" aria-hidden="true">عينة أ</span> <span class="lq-sample lq-sample--b" aria-hidden="true">عينة ب</span> <span class="lq-sample lq-sample--c" aria-hidden="true">عينة ج</span>
+      <figcaption class="lq-caption">مقارنة تدفق السوائل</figcaption>
+    </figure>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(1)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S3 — deck slide 6 · HookOpenQuestion (library S1 variant: image left,
+       writing column right). Notes: "המשך פעיל אחרי תו אחד". The deck draws a
+       צדקתי? under the box and the model answer in grey inside it — צדקתי?
+       reveals that model answer (open question, not scored). ══ -->
+  <section class="screen" data-screen="3" id="s3">
+    <!-- QA 03.11.26: the dslide 2 tube comparison (same figure, same place) in
+         place of the engine photo - the learner needs it to answer -->
+    <figure class="lq-col-fig lq-s2-fig">
+      <img src="assets/img/tubes-flow.png" alt="ثلاثة أنابيب زجاجية متطابقة على حامل، وفي كل منها سائل بلون مختلف تقدّم من نقطة البداية نفسها: العينة أ الزرقاء تقدّمت أبعد مسافة، والعينة ب الصفراء مسافة أقلّ، والعينة ج البرتقالية أقصر مسافة.">
+      <span class="lq-sample lq-sample--a" aria-hidden="true">عينة أ</span> <span class="lq-sample lq-sample--b" aria-hidden="true">عينة ب</span> <span class="lq-sample lq-sample--c" aria-hidden="true">عينة ج</span>
+      <figcaption class="lq-caption">مقارنة تدفق السوائل</figcaption>
+    </figure>
+    <div class="hook-content lq-hook-content">
+      <p class="lq-hook-q">استنادًا إلى الفحص الذي شاهدتموه، أيّ عينة تعتقدون أنها تسبّبت<br>بالعطل؟</p>
+      <p class="lq-hook-instr"><strong>اكتبوا فرضيتكم واشرحوا على ماذا استندتم.</strong></p>
+      <textarea class="hook-textarea" id="s3-answer" rows="4" aria-label="اكتبوا فرضيتكم واشرحوا على ماذا استندتم" oninput="lqHookInput('s3')"></textarea>
+      <button class="quiz-check lq-hook-check" id="s3-check" type="button" disabled onclick="lqHookCheck('s3')"><span class="nav-label" data-label="هل إجابتي صحيحة؟">هل إجابتي صحيحة؟</span></button>
+      <p class="lq-hook-model" id="s3-model" hidden>العينة ج هي المشتبه في تسبّبها بالعطل: فقد قطعت<br>أقصر مسافة في الأنبوب، ولذلك تتوافق مع حالة يصل فيها السائل<br>إلى المحرك ببطء أكثر من اللازم.</p>
+    </div>
+    <button class="btn-continue" id="s3-continue" disabled onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(2)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S4 — deck slide 7 · מה נלמד היום (text right, photo left) ══ -->
+  <section class="screen" data-screen="4" id="s4">
+    <div class="lq-col-text lq-col-text--top">
+      <p><strong>لفهم سبب العطل ومعرفة ما إذا كانت فرضيتكم صحيحة، سنتعلّم اليوم:</strong></p>
+      <ul class="lq-bullets lq-bullets--marked">
+        <li>ما المشترك بين جميع السوائل.</li>
+        <li>في ما تختلف السوائل عن بعضها البعض؟</li>
+        <li>كيف نختبر الفروق بينها في تجربة علمية؟</li>
+      </ul>
+    </div>
+    <figure class="lq-col-fig">
+      <img src="assets/img/lab-equipment.jpg" alt="أدوات مختبر على طاولة بيضاء: ثلاثة أكواب بسائل شفاف، أصفر وبرتقالي، وكرة معدنية، وساعة إيقاف، وعدسة مكبّرة، وأنابيب اختبار في حامل، ومخبار مدرّج، ومقطّارة، ودفتر وقلم رصاص.">
+    </figure>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(3)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S5 — deck slide 8 · the pouring mini-applet (notes: "מעין יישומון
+       שצריך להפיק"). The jug starts full to 200 מ״ל; the three empty vessels
+       pulse; a click pours 200 מ״ל into it (water takes the vessel's shape,
+       the amount stays 200 מ״ל), then the vessel empties and the jug refills.
+       המשך opens after all three. Layers cut from the deck's own picture;
+       geometry = the deck's art box (x192, scale 0.483), lifted to clear the
+       bar. (unit.js lqPour*) ══ -->
+  <section class="screen" data-screen="5" id="s5">
+    <h1 class="ts-title lq-s5-title">ما المشترك بين جميع السوائل؟</h1>
+    <div class="lq-s5-instr">
+      <p><strong class="lq-blue">انقروا على الأوعية الفارغة لنقل الماء إليها.</strong></p>
+      <p>انتبهوا: ما الذي يتغيّر وما الذي يبقى ثابتًا؟</p>
+    </div>
+    <div class="lq-pour" id="s5-pour">
+      <div class="lq-vessel lq-vessel--jug" aria-hidden="true">
+        <img src="assets/img/pour-jug-empty.png" alt="" data-no-zoom>
+        <img class="lq-jug-water" src="assets/img/pour-jug.png" alt="" data-no-zoom>
+      </div>
+      <button type="button" class="lq-vessel lq-vessel--glass is-target" data-v="glass" aria-label="كوب - اضغطوا لصبّ 200 مل من الماء فيه" onclick="lqPour(this)">
+        <span class="lq-water"><span class="lq-water-level"></span></span>
+        <img src="assets/img/pour-glass.png" alt="" data-no-zoom>
+        <span class="lq-stream"></span> <span class="lq-amount" dir="rtl">200 مل</span>
+      </button>
+      <button type="button" class="lq-vessel lq-vessel--bottle is-target" data-v="bottle" aria-label="زجاجة ضيّقة - انقروا لصبّ 200 مل من الماء فيها" onclick="lqPour(this)">
+        <span class="lq-water"><span class="lq-water-level"></span></span>
+        <img src="assets/img/pour-bottle.png" alt="" data-no-zoom>
+        <span class="lq-stream"></span>
+        <span class="lq-amount" dir="rtl">200 مل</span>
+      </button>
+      <button type="button" class="lq-vessel lq-vessel--dish is-target" data-v="dish" aria-label="وعاء واسع ومسطّح - انقروا لصبّ 200 مل من الماء فيه" onclick="lqPour(this)">
+        <span class="lq-water"><span class="lq-water-level"></span></span>
+        <img src="assets/img/pour-dish.png" alt="" data-no-zoom>
+        <span class="lq-stream"></span>
+        <span class="lq-amount" dir="rtl">200 مل</span>
+      </button>
+    </div>
+    <button class="btn-continue" id="s5-continue" disabled onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(4)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S6 — deck slide 9 · three common properties, each box paired with an
+       illustration that overlaps its edge (deck geometry) ══ -->
+  <section class="screen" data-screen="6" id="s6">
+    <h1 class="ts-title lq-s6-title">ما الخصائص المشتركة التي اكتشفناها بين جميع السوائل؟</h1>
+    <!-- QA 28.10 (this screen only): the three rows fade in turn, top > middle > bottom -->
+    <div class="lq-prop-step">
+      <p class="lq-prop lq-prop--1">هي تتدفق</p>
+      <img class="lq-prop-img lq-prop-img--1" src="assets/img/pour-puddle.png" alt="تتدفق المياه من وعاء القياس وتشكّل بركة صغيرة." data-no-zoom>
+    </div>
+    <div class="lq-prop-step">
+      <p class="lq-prop lq-prop--2">تأخذ شكل الوعاء الذي توجد فيه</p>
+      <img class="lq-prop-img lq-prop-img--2" src="assets/img/vessels-filled.png" alt="ثلاثة أوعية شفافة بأشكال مختلفة - كوب وزجاجة وطبق مسطح - وفي كل منها ماء." data-no-zoom>
+    </div>
+    <div class="lq-prop-step">
+      <p class="lq-prop lq-prop--3">يبقى حجمها ثابتًا عند درجة حرارة معيّنة</p>
+      <img class="lq-prop-img lq-prop-img--3" src="assets/img/syringe.png" alt="محقنة مدرّجة تحتوي على سائل أزرق فاتح." data-no-zoom>
+    </div>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(5)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S7 — deck slides 10+11 · FlipCardsReveal (ratio-01-01 S1, one-way).
+       Notes number the photos right→left: 1 pipe, 2 engine bay, 3 fuel pump.
+       RTL row: the FIRST card renders RIGHTMOST. המשך after all three. ══ -->
+  <section class="screen" data-screen="7" id="s7">
+    <h1 class="ts-title p3-title-top lq-s7-title">لماذا تُعدّ هذه الخصائص مفيدة؟</h1>
+    <p class="ts-lead lq-s7-lead"><strong>انقروا على البطاقات </strong>واكتشفوا الاستخدام الذي تتيحه كل خاصية من خصائص السوائل.</p>
+    <!-- QA 04.11.26 (dslide 7): new card pictures (producer), right -> left: tap / popsicle mould / syringe -->
+    <div class="lq-cards" role="group" aria-label="بطاقات - انقروا للاكتشاف">
+      <button class="frc-card lq-frc" data-index="0" type="button" aria-expanded="false" aria-label="البطاقة 1 - انقروا لقلبها" onclick="lqFlip(this)">
+        <span class="frc-card-inner">
+          <span class="frc-card-front"><img src="assets/img/card-tap.jpg" alt="صنبور مفتوح يجري منه الماء إلى حوض مطبخ أبيض." data-no-zoom></span>
+          <span class="frc-card-back" aria-hidden="true"><span class="frc-card-back-content"><strong>السوائل تجري،</strong><br>ولذلك يمكن نقلها<br>من مكان إلى آخر عبر الأنابيب.</span></span>
+        </span>
+      </button>
+      <button class="frc-card lq-frc" data-index="1" type="button" aria-expanded="false" aria-label="البطاقة 2 - انقروا لقلبها" onclick="lqFlip(this)">
+        <span class="frc-card-inner">
+          <span class="frc-card-front"><img src="assets/img/card-popsicle.jpg" alt="يُسكب شراب توت أحمر من إبريق في قالب مثلّجات، فتمتلئ كل خانة متّخذةً شكل القالب." data-no-zoom></span>
+          <span class="frc-card-back" aria-hidden="true"><span class="frc-card-back-content"><strong>تأخذ السوائل شكل الوعاء،</strong><br>ولذلك يمكنها أيضًا ملء<br>تجاويف معقّدة - مثل سائل<br>التبريد في المحرك.</span></span>
+        </span>
+      </button>
+      <button class="frc-card lq-frc" data-index="2" type="button" aria-expanded="false" aria-label="البطاقة 3 - انقروا لقلبها" onclick="lqFlip(this)">
+        <span class="frc-card-inner">
+          <span class="frc-card-front"><img src="assets/img/card-syringe.jpg" alt="مِحقنة تحتوي على ماء، مع تدريجات من 1 إلى 5 مل." data-no-zoom></span>
+          <span class="frc-card-back" aria-hidden="true"><span class="frc-card-back-content"><strong>للسوائل حجم ثابت</strong><br><strong>عند درجة حرارة معيّنة،</strong><br>ولذلك يمكن قياس وتوفير كمية<br>دقيقة من السائل بحسب الحجم.</span></span>
+        </span>
+      </button>
+    </div>
+    <button class="btn-continue" id="s7-continue" disabled onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(6)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- S8 — deck slide 12 (sorting drag) is generated by quiz-engine.js from questions.js -->
+
+  <!-- ══ S9 — deck slide 13 · תכונות מאפיינות ותכונות מבדילות. Notes: "טקסט
+       עולה בהדרגה" — p3Stage s9 per paragraph, המשך after the last. ══ -->
+  <section class="screen" data-screen="9" id="s9">
+    <h1 class="ts-title lq-title-right">الخصائص المميزة والخصائص الفارقة</h1>
+    <div class="lq-col-text">
+      <p class="p3-step-line lq-tight">حتى الآن تعلّمنا ما هو مشترك بين جميع السوائل.</p>
+      <p class="p3-step-line">الآن سنكتشف ما الذي يمكن أن يختلف بينها.</p>
+      <p class="p3-step-line lq-tight"><strong>انظروا إلى الصورة:</strong></p>
+      <p class="p3-step-line">جميع من في الصورة ينتمون إلى مجموعة واحدة، فهم جميعًا طلاب.</p>
+      <p class="p3-step-line lq-tight"><strong class="lq-blue">لديهم صفات مشتركة،</strong></p>
+      <p class="p3-step-line"><strong class="lq-blue">لكن لديهم أيضًا صفات تميّز بينهم.</strong></p>
+    </div>
+    <figure class="lq-col-fig">
+      <img src="assets/img/students-corridor.jpg" alt="ستة مراهقين يحملون حقائب ظهر يقفون في ممر مدرسة؛ أحدهم يحمل كرة قدم، وإحداهن تحمل كتباً.">
+    </figure>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(8)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S10 — deck slide 14 · three distinguishing properties, columns
+       right→left. Notes: the closing sentence "עולה בסוף" (p3Stage s10, gated). ══ -->
+  <section class="screen" data-screen="10" id="s10">
+    <div class="lq-s10-head">
+      <h1 class="ts-title">حتى السوائل ليست متطابقة فيما بينها.</h1>
+      <!-- QA 04.11.26 (dslide 10): corrected lead (producer) -->
+      <p class="lq-s10-lead">هل تتذكّرون السائل الذي لم يصل إلى المحرك؟ حان الوقت للتعرّف إلى خصائص إضافية للسوائل لفهم سبب العطل:</p>
+    </div>
+    <div class="lq-trio">
+      <div class="lq-trio-col">
+        <p class="lq-trio-title"><strong>درجة الغليان</strong></p>
+        <img src="assets/img/boiling-pot.jpg" alt="قدر زجاجي فيه ماء يغلي على لهب غاز، وفيه ميزان حرارة يشير إلى 100°C.">
+        <p class="lq-trio-desc"><strong>درجة الحرارة التي يبدأ عندها السائل<br>بالغليان والتحوّل إلى غاز</strong></p>
+      </div>
+      <div class="lq-trio-col">
+        <p class="lq-trio-title"><strong>الكثافة</strong></p>
+        <!-- QA 25.10: the deck's labels were baked in at ~7px; they are live text now -->
+        <div class="lq-layers">
+          <img src="assets/img/liquid-layers-glass.png" alt='كأس فيه ثلاث طبقات من السوائل، وعليها الملصقات من الأعلى إلى الأسفل: "زيت"، "ماء"، "عسل".'>
+          <span class="lq-layer-tag lq-layer-tag--oil" aria-hidden="true">زيت</span> <span class="lq-layer-tag lq-layer-tag--water" aria-hidden="true">ماء</span> <span class="lq-layer-tag lq-layer-tag--honey" aria-hidden="true">عسل</span>
+        </div>
+        <p class="lq-trio-desc"><strong>مقدار الكتلة في وحدة حجم</strong></p>
+      </div>
+      <div class="lq-trio-col">
+        <p class="lq-trio-title"><strong>اللُّزوجة</strong></p>
+        <img src="assets/img/honey-dipper.png" alt="العسل يقطر من عصا العسل إلى وعاء فيه عسل.">
+        <p class="lq-trio-desc"><strong>مقدار مقاومة السائل للتدفق</strong></p>
+      </div>
+    </div>
+    <p class="lq-s10-close p3-step-line"><strong class="lq-semibold">سنركّز الآن على اللزوجة ونتعرّف إليها بعمق أكبر قليلًا.</strong></p>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(9)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S11 — deck slide 15 · מהי צמיגות? Companion = the shared widget
+       (bottom-left, bubble above — memory rule), not the deck's centre-left
+       placement. Notes: "הדמות עולה בסוף" (p3Stage s11, gated). ══ -->
+  <section class="screen" data-screen="11" id="s11">
+    <h1 class="ts-title lq-s11-title">ما هي اللزوجة؟</h1>
+    <div class="lq-s11-text">
+      <!-- QA 04.11.26 (dslide 11): the definition grows and settles on entry (lqDefPop) -->
+      <p class="p3-step-line"><strong class="lq-def-pop">اللزوجة هي مدى مقاومة السائل للجريان.</strong></p>
+      <p class="p3-step-line">اللزوجة المنخفضة - السائل يتدفق بسرعة.<br>اللزوجة العالية - السائل يتدفق ببطء.</p>
+    </div>
+    <div class="character-widget p3-step-line lq-s11-char">
+      <!-- QA 04.11.26 (dslide 11): corrected bubble (producer) -->
+      <div class="speech-bubble">يمكن للزوجة أن تفسر لماذا لم يصل السائل<br>إلى المحرك في قصتنا.</div>
+      <img id="s11-char" src="../unit-assets/img/character-orange.png" alt="الشخصية المرافقة" data-no-zoom>
+    </div>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(10)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+
+
+  <!-- ══ S12 — deck slide 16 · applet intro (SectionIntroScreen-LongText).
+       The deck draws the forward action twice (mid-screen "כניסה למעבדה" +
+       a grey bottom המשך); built as ONE bottom action carrying the deck's label,
+       like every launcher in the library (PracticeSetIntro-Character). ══ -->
+  <section class="screen" data-screen="12" id="s12">
+    <div class="transition-content ts-content lq-intro">
+      <h1 class="ts-title">هل أنتم مستعدون لفحص<br>اللزوجة بأنفسكم؟</h1>
+      <p class="ts-lead">في المختبر بانتظاركم سائلان مختلفان.</p>
+      <p class="ts-lead"><strong>مهمتكم: اكتشاف أيّهما أكثر لزوجة باستخدام تجربة علمية.</strong></p>
+      <p class="ts-lead lq-gap-top">مراحل المهمة:</p>
+      <!-- QA 28.10: deck error - the chain = the applet's own four stages.
+           QA 04.11.26 (client: "לשים בריבועים כמו תרשים זרימה או למספר"; producer: highlight it and
+           bring it in step by step): numbered flowchart boxes, revealed one after another (lqFlowEnter) -->
+      <ol class="lq-flow" aria-label="مراحل المهمة"><li class="lq-flow-step"><span class="lq-flow-n">1</span><span class="lq-flow-t">تخطيط التجربة</span></li><span class="lq-flow-arrow" aria-hidden="true"></span><li class="lq-flow-step"><span class="lq-flow-n">2</span><span class="lq-flow-t">التنفيذ وجمع البيانات</span></li><span class="lq-flow-arrow" aria-hidden="true"></span><li class="lq-flow-step"><span class="lq-flow-n">3</span><span class="lq-flow-t">تحليل النتائج</span></li><span class="lq-flow-arrow" aria-hidden="true"></span><li class="lq-flow-step"><span class="lq-flow-n">4</span><span class="lq-flow-t">استخلاص الاستنتاجات</span></li></ol>
+    </div>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="دخول المختبر">دخول المختبر</span></button>
+    <button class="btn-back" onclick="goTo(11)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S13 — deck slide 17 · applet שלב 1: experiment planning (custom
+       paired-condition matcher). Notes: no fixed answer — valid iff liquid A
+       and liquid B carry the SAME three conditions; a mismatching row is
+       marked red; "תכנון הניסוי הושלם" opens after all six choices; hint after
+       one mistake; after the correct feedback the button becomes המשך.
+       (unit.js lqPlan*) ══ -->
+  <section class="screen" data-screen="13" id="s13">
+    <div class="qprog lq-stagebar" id="s13-stages"></div>
+    <div class="lq-stage-col">
+      <p class="lq-stage-title"><strong>المرحلة 1 | تخطيط التجربة</strong></p>
+      <p>لدَيكم سائلان مختلفان.</p>
+      <p>لفحص مدى لزوجتهما، سنُسقط كرة في كلّ منهما ونقيس زمن سقوطها إلى الأسفل داخل السائل.</p>
+      <p><strong class="lq-blue">اختاروا ظروف التجربة<br>بحيث يمكنكم المقارنة بين السائلين<br>بطريقة عادلة.</strong></p>
+    </div>
+    <div class="lq-plan" id="s13-plan">
+      <div class="lq-plan-side" data-side="a">
+        <p class="lq-plan-name"><strong>السائل أ</strong></p>
+        <img class="lq-plan-img" src="assets/img/cylinder-plan.png" alt='أسطوانة زجاجية تحتوي على سائل أزرق فاتح، وكرة معدنية في الجزء العلوي منها، وسهم متقطع متجه نحو الأسفل. وقد وُسِمَ "ارتفاع السقوط" و"حجم السائل"، وبجانب الأسطوانة مسطرة بالسنتيمترات عليها التدريجان 0 و20.' data-zoom>
+        <p class="lq-plan-cap">انقروا على اختيارِكم:</p>
+      </div>
+      <div class="lq-plan-side" data-side="b">
+        <p class="lq-plan-name"><strong>السائل ب</strong></p>
+        <!-- QA 28.10: liquid B amber, so the two liquids read as different -->
+        <img class="lq-plan-img" src="assets/img/cylinder-plan-b.png" alt='أسطوانة زجاجية تحتوي على سائل برتقالي كهرماني، وكرة معدنية في الجزء العلوي منها، وسهم منقط يشير إلى الأسفل. مكتوب عليها "ارتفاع السقوط" و"حجم السائل"، وبجانب الأسطوانة مسطرة بالسنتيمترات عليها التدريجات 0 و20.' data-zoom>
+        <p class="lq-plan-cap">انقروا على اختيارِكم:</p>
+      </div>
+      <div class="lq-plan-rows">
+        <div class="lq-plan-row" data-row="ball"><span class="lq-plan-label">نوع الكرة:</span>
+          <span class="lq-plan-pair" data-side="a"><button type="button" class="lq-pill" data-v="metal">كرة معدنية</button><button type="button" class="lq-pill" data-v="glass">كرة زجاجية</button></span>
+          <span class="lq-plan-pair" data-side="b"><button type="button" class="lq-pill" data-v="metal">كرة معدنية</button><button type="button" class="lq-pill" data-v="glass">كرة زجاجية</button></span>
+        </div>
+        <div class="lq-plan-row" data-row="height"><span class="lq-plan-label">ارتفاع السقوط:</span>
+          <span class="lq-plan-pair" data-side="a"><button type="button" class="lq-pill" data-v="40">40 سم</button><button type="button" class="lq-pill" data-v="20">20 سم</button></span>
+          <span class="lq-plan-pair" data-side="b"><button type="button" class="lq-pill" data-v="40">40 سم</button><button type="button" class="lq-pill" data-v="20">20 سم</button></span>
+        </div>
+        <div class="lq-plan-row" data-row="volume"><span class="lq-plan-label">حجم السائل:</span>
+          <span class="lq-plan-pair" data-side="a"><button type="button" class="lq-pill" data-v="300">300 مل</button><button type="button" class="lq-pill" data-v="200">200 مل</button></span>
+          <span class="lq-plan-pair" data-side="b"><button type="button" class="lq-pill" data-v="300">300 مل</button><button type="button" class="lq-pill" data-v="200">200 مل</button></span>
+        </div>
+      </div>
+    </div>
+    <div class="quiz-feedbox" id="q13-feedbox"></div>
+    <div class="scq-bar">
+      <button class="quiz-check" id="s13-check" disabled onclick="lqPlanCheck()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+      <button class="quiz-hint" id="s13-hint" style="visibility:hidden" onclick="lqOpenHint(13, LQ_PLAN_HINT)"><span class="nav-label" data-label="هل يمكنني الحصول على تلميح؟">هل يمكنني الحصول على تلميح؟</span></button>
+      <button class="quiz-back" onclick="goTo(12)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+    </div>
+  </section>
+
+  <!-- ══ S14 — deck slide 18 · transition to שלב 2 ══ -->
+  <section class="screen" data-screen="14" id="s14">
+    <!-- QA 04.11.26 (dslide 14): all the text larger (28px) -->
+    <div class="transition-content ts-content lq-intro lq-s14">
+      <p class="ts-lead">لقد صممتم تجربة لمقارنة لزوجة سائلين، مع الحفاظ على شروط متطابقة<br>وتغيير نوع السائل فقط.</p>
+      <p class="ts-lead"><strong>ننتقل الآن إلى المرحلة 2 </strong>- <strong>ننفّذ التجربة ونجمع البيانات.</strong></p>
+      <p class="ts-lead">في المختبر ينتظركم تجهيز تجريبي أُعدّ وفق المبدأ نفسه.<br>هل أنتم مستعدون لبدء القياس؟</p>
+    </div>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(13)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S15 — deck slide 19 · applet שלב 2: run the experiment, record the
+       times, compute the averages (custom; FillInTheBlankTable-Numbers nearest).
+       Notes: fixed conditions (metal / 20 ס"מ / 200 מ"ל); per liquid a cylinder,
+       a timer, "התחילו מדידה" and a 3-row table; the time is NOT auto-filled;
+       the next run opens only after typing; the average opens after 3 rows;
+       times A 2.8 / 3.0 / 3.2, B 5.8 / 6.1 / 6.1; timer in tenths; averages
+       3.0 / 6.0; wrong average → "בדקו שוב את החישוב ונסו שנית."; the forward
+       button "סיימתי לבצע את הניסוי ולאסוף נתונים" opens after all four. The
+       cylinder + ball are drawn live (the deck's picture is 208px and static).
+       (unit.js lqRun*) ══ -->
+  <section class="screen" data-screen="15" id="s15">
+    <div class="qprog lq-stagebar" id="s15-stages"></div>
+    <div class="lq-stage-col lq-stage-col--run">
+      <!-- QA 04.11.26 (dslide 15): corrected instructions (producer) -->
+      <p class="lq-stage-title"><strong>المرحلة 2 | نُجري التجربة<br>ونجمع البيانات</strong></p>
+      <p>سنجري الآن التجربة التي خطّطنا لها:<br>في كل تجربة سنُسقط الكرة من الارتفاع<br>نفسه، ونقيس زمن الغوص.</p>
+      <p><strong class="lq-blue">نفّذوا التجربة 3 مرات لكل<br>سائل، وسجّلوا أزمنة<br>الغوص ومتوسطها في الجدول.</strong></p>
+    </div>
+    <!-- QA 25.10: the applet (conditions + both runs) zooms to the full screen, without the side text -->
+    <div class="lq-run-stage" id="s15-stage">
+    <div class="lq-conds">
+      <p class="lq-conds-title"><strong>تكون ظروف التجربة متطابقة في السائلين</strong></p>
+      <div class="lq-conds-row">
+        <span class="lq-cond"><strong>حجم السائل: 200 مل</strong><img src="assets/img/icon-beaker.png" alt="" data-no-zoom></span>
+        <span class="lq-cond"><strong>ارتفاع السقوط: 20 سم</strong><img src="assets/img/icon-ruler.png" alt="" data-no-zoom></span>
+        <span class="lq-cond"><strong>نوع الكرة: كرة معدنية</strong><img src="assets/img/icon-ball.png" alt="" data-no-zoom></span>
+      </div>
+    </div>
+    <div class="lq-run" data-side="a" id="s15-a"></div>
+    <div class="lq-run" data-side="b" id="s15-b"></div>
+    </div>
+    <button class="applet-zoom-btn lq-run-zoom" type="button" onclick="lqRunZoom(true)" aria-label="تكبير التطبيق إلى شاشة كاملة"></button>
+    <button class="applet-zoom-btn applet-close-btn lq-run-close" type="button" onclick="lqRunZoom(false)" aria-label="إغلاق الشاشة الكاملة"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><line x1="2" y1="2" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="13" y1="2" x2="2" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    <button class="btn-continue" id="s15-continue" disabled onclick="advanceScreen()"><span class="nav-label" data-label="انتهيت">انتهيت</span></button>
+    <button class="btn-back" onclick="goTo(14)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S16 — deck slide 20 · "שלב 2 הושלם ✓" ══ -->
+  <section class="screen" data-screen="16" id="s16">
+    <div class="transition-content ts-content lq-intro">
+      <p class="ts-lead">المرحلة 2 اكتملت ✓</p>
+      <p class="ts-lead">نفّذتم التجربة وجمعتم البيانات ونظّمتموها في جدول وحسبتم<br>متوسط زمن الغوص في كل سائل.</p>
+      <p class="ts-lead"><strong>حان الوقت الآن لمقارنة النتائج واستخلاص استنتاج.</strong></p>
+    </div>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(15)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- S17, S18 — deck slides 21-22 (applet stages 3-4) are generated by quiz-engine.js -->
+
+  <!-- ══ S19 — deck slide 23 · applet recap, four cards right→left. Notes:
+       "לאחר השלמת כל שלבי היישומון - כפתור המשך הופך לזמין" — already true by
+       construction: S13 and S15 gate their own המשך and S17/S18 must be answered. ══ -->
+  <section class="screen" data-screen="19" id="s19">
+    <div class="lq-recap-head">
+      <p class="lq-recap-hi">أنتهيتم!</p>
+      <p>ماذا فعلنا إذن؟</p>
+    </div>
+    <ol class="lq-recap">
+      <li><p class="lq-recap-h"><strong>1. خطّطنا تجربة مقارنة</strong></p><div class="lq-recap-card">لاختبار تأثير نوع<br>السائل، أبقينا على بقية<br>شروط التجربة متطابقة.</div></li>
+      <li><p class="lq-recap-h"><strong>2. أجرينا التجربة وجمعنا البيانات</strong></p><div class="lq-recap-card">قسنا ثلاث مرات زمن غوص<br>الكرة في كل سائل، وحسبنا<br>المتوسط وجمعنا النتائج<br>في جدول.</div></li>
+      <li><p class="lq-recap-h"><strong>3. حللنا النتائج</strong></p><div class="lq-recap-card">حدّدنا السائل الذي كان زمن<br>الغوص فيه الأطول.</div></li>
+      <li><p class="lq-recap-h"><strong>4. استخلصنا النتيجة</strong></p><div class="lq-recap-card">قررنا أي سائل أكثر لزوجة.</div></li>
+    </ol>
+    <p class="lq-recap-remember"><strong>تذكّروا: كلما كان الجريان أبطأ، كانت اللزوجة أعلى.</strong></p>
+    <button class="btn-continue" id="s19-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(18)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S20 — deck slide 24 · warm-up launcher (PracticeSetIntro-Character).
+       The two-cups GIF pose is not supplied — base pose until it arrives. ══ -->
+  <section class="screen" data-screen="20" id="s20">
+    <div class="transition-content ts-content">
+      <h1 class="ts-title">ماذا بقيَ عالقًا في عقولنا؟</h1>
+      <p class="ts-lead">سؤالان بسيطان للإحماء قبل أن نتقدم</p>
+      <!-- QA 28.10: the producer's clip, plays once per entry -->
+      <div class="transition-character ts-character char-slot lq-intro-char"><video id="s20-char" class="transition-still" src="assets/video/character-orange-questioning.mp4" muted playsinline preload="auto" aria-label="الشخصية المرافقة تفكر، وفوقها علامة استفهام" data-no-zoom></video></div>
+    </div>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="يمكن البدء!">يمكن البدء!</span></button>
+    <button class="btn-back" onclick="goTo(19)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- Quiz hint overlay — shared, outside all .screen divs -->
+  <div id="quiz-hint-overlay" class="hidden m-popup" role="dialog" aria-modal="true" aria-label="تلميح">
+    <div class="hint-popup">
+      <!-- 07.09: the bulb the hint card was missing. Plain-bulb variant
+           (viewBox 0 0 20.997 27.9988), the one the approved build uses in
+           the card title — deliberately NOT the button's rayed bulb. The
+           text lives in its own span so quizOpenHint() can rewrite it
+           without deleting the icon. -->
+      <h3 class="hint-title"><svg class="hint-title-icon" viewBox="0 0 40 35" fill="none" aria-hidden="true"><path d="M27.3745 4.25047C25.1822 2.12063 22.3177 1.05696 19.3069 1.25356C13.97 1.6014 9.65119 6.02493 9.25901 11.5398C9.01056 15.0358 10.3137 18.3755 12.8373 20.6995C14.2014 21.9572 14.9857 23.7921 14.9857 25.733H17.2754H22.7293H25.019C25.019 23.8224 25.8351 21.9547 27.26 20.6087C29.4937 18.5016 30.7726 15.4996 30.7726 12.3741C30.7726 9.24868 29.5327 6.34503 27.3721 4.24543L27.3745 4.25047ZM20.0012 8.53033C17.955 8.53033 16.2865 10.2544 16.2865 12.3767C16.2865 13.0295 15.7725 13.5613 15.1416 13.5613C14.5107 13.5613 13.9968 13.0295 13.9968 12.3767C13.9968 8.94874 16.6908 6.16104 20.0012 6.16104C20.6369 6.16104 21.1509 6.69287 21.1509 7.34569C21.1509 7.9985 20.6369 8.53033 20.0012 8.53033Z" fill="white"/><path d="M14.9829 30.1913C14.9829 31.2751 15.3824 32.2934 16.1205 33.0622L16.1448 33.0874C16.8902 33.8612 17.884 34.2896 18.9412 34.2896H21.0604C22.12 34.2896 23.1163 33.8637 23.8641 33.0848C24.6094 32.3136 25.0211 31.2852 25.0211 30.1963V27.6758H14.9829V30.1913ZM17.2726 30.0451H22.7265V30.1963C22.7265 30.6525 22.556 31.0886 22.2418 31.4137C21.93 31.7313 21.5013 31.9204 21.0604 31.9204H18.9412C18.5052 31.9204 18.0911 31.7439 17.7793 31.4314L17.7622 31.4112C17.4504 31.0936 17.2726 30.65 17.2726 30.1938V30.0476V30.0451Z" fill="white"/><path d="M38.8568 11.1914H34.7816C34.1482 11.1914 33.6367 11.7232 33.6367 12.3761C33.6367 13.0289 34.1507 13.5607 34.7816 13.5607H38.8568C39.4901 13.5607 40.0016 13.0289 40.0016 12.3761C40.0016 11.7232 39.4877 11.1914 38.8568 11.1914Z" fill="white"/><path d="M6.36734 12.3761C6.36734 11.7207 5.85338 11.1914 5.22249 11.1914H1.14486C0.511531 11.1914 0 11.7232 0 12.3761C0 13.0289 0.513967 13.5607 1.14486 13.5607H5.22005C5.85338 13.5607 6.36491 13.0289 6.36491 12.3761H6.36734Z" fill="white"/><path d="M32.1095 4.79094C32.3361 4.79094 32.565 4.72036 32.7648 4.57669L36.1043 2.15699C36.6232 1.78143 36.7474 1.04291 36.3845 0.506038C36.0215 -0.0308348 35.3078 -0.161902 34.789 0.216177L31.4494 2.63589C30.9306 3.01145 30.8063 3.74996 31.1693 4.28683C31.3909 4.61702 31.7466 4.79346 32.1095 4.79346V4.79094Z" fill="white"/><path d="M7.23672 20.1824L3.89716 22.6021C3.37832 22.9777 3.25409 23.7162 3.61703 24.2531C3.8387 24.5833 4.19433 24.7597 4.55727 24.7597C4.78381 24.7597 5.01278 24.6891 5.21252 24.5454L8.55209 22.1257C9.07093 21.7502 9.19516 21.0117 8.83221 20.4748C8.46927 19.9379 7.75556 19.8068 7.23672 20.1849V20.1824Z" fill="white"/><path d="M36.1042 22.5989L32.7646 20.1792C32.2457 19.8037 31.532 19.9347 31.1691 20.4691C30.8062 21.006 30.9328 21.7445 31.4492 22.12L34.7888 24.5397C34.9885 24.6859 35.2175 24.754 35.444 24.754C35.8045 24.754 36.1602 24.5776 36.3843 24.2474C36.7472 23.7105 36.6206 22.972 36.1042 22.5964V22.5989Z" fill="white"/><path d="M8.5524 2.63409L5.21283 0.214385C4.69399 -0.161174 3.98028 -0.0301066 3.61734 0.504246C3.2544 1.04112 3.38106 1.77963 3.89746 2.15519L7.23703 4.5749C7.43677 4.72109 7.66574 4.78915 7.89228 4.78915C8.25279 4.78915 8.60842 4.61271 8.83252 4.28252C9.19546 3.74565 9.0688 3.00713 8.5524 2.63157V2.63409Z" fill="white"/></svg><span class="hint-title-text"></span></h3>
+      <p class="hint-body"></p>
+      <button class="hint-close-btn" data-label="العودة إلى السؤال" onclick="quizCloseHint()">العودة إلى السؤال</button>
+    </div>
+  </div>
+
+  <!-- Problem-report modal (approved-units pattern; posts to the shared Google Form) -->
+  <div id="report-modal" class="report-modal-overlay m-popup" hidden role="dialog" aria-modal="true" aria-labelledby="report-modal-title">
+    <div class="report-modal-box">
+      <button class="report-close-btn" onclick="tryCloseReportModal()" aria-label="إغلاق">&#10005;</button>
+      <h2 class="report-modal-title" id="report-modal-title">التبليغ عن مشكلة</h2>
+      <p class="report-modal-body">هل هناك شيء غير واضح أو لا يعمل كما ينبغي؟ أخبرونا بما حدث حتى نتمكن من المعالجة.</p>
+      <div class="report-field">
+        <label class="report-label" for="report-type">ما نوع المشكلة <span class="required-star">*</span></label>
+        <select class="report-select" id="report-type">
+          <option value="" disabled selected>اختاروا نوع المشكلة</option>
+          <option value="technical">عطل تقني أو شيء ما لا يعمل</option>
+          <option value="unclear">هناك شيء لا أفهمه</option>
+          <option value="other">آخر</option>
+        </select>
+      </div>
+      <div class="report-field">
+        <label class="report-label" for="report-text">ماذا حدث؟ <span class="required-star">*</span></label>
+        <textarea class="report-textarea" id="report-text" maxlength="250" rows="4" placeholder="صفوا المشكلة..."></textarea>
+        <span class="report-char-count" id="report-char-count">0 / 250</span>
+      </div>
+      <p class="report-error" id="report-error" hidden>يرجى اختيار نوع المشكلة ووصف ما حدث.</p>
+      <div class="report-actions">
+        <button class="report-submit-btn" onclick="submitReport()">إرسال</button>
+        <button class="report-cancel-btn" onclick="tryCloseReportModal()">إلغاء</button>
+      </div>
+      <div class="report-thanks" id="report-thanks" hidden>
+        <p>شكرًا! تم إرسال التبليغ. سنعالج المشكلة في أقرب وقت.</p>
+        <button class="report-submit-btn" onclick="forceCloseReportModal()">إغلاق</button>
+      </div>
+    </div>
+  </div>
+  <div id="report-confirm-modal" class="report-modal-overlay m-popup" hidden role="dialog" aria-modal="true" aria-labelledby="confirm-modal-title">
+    <div class="report-modal-box report-confirm-box">
+      <h2 class="report-modal-title" id="confirm-modal-title">هل تريدون إغلاق النافذة فعلًا؟</h2>
+      <p class="report-modal-body">إذا ضغطتم على إغلاق لن يتم إرسال التبليغ</p>
+      <div class="report-actions">
+        <button class="report-cancel-btn" onclick="forceCloseReportModal()">إغلاق النافذة</button>
+        <button class="report-submit-btn" onclick="backToReportForm()">أريد التبليغ</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+  
+  <script src="script.js?v=2026110801"></script>
+  <script src="../unit-js/motion.js?v=2026110801"></script>
+  <script src="../unit-js/quiz-engine.js?v=2026110801"></script>
+  <script src="../unit-js/questions.js?v=2026110801"></script>
+  <script src="../unit-js/unit.js?v=2026110801"></script>
+  <script src="../unit-js/report-modal.js?v=2026110801"></script>
+  <script src="../unit-js/engine.js?v=2026110801"></script>
+</body>
+</html>

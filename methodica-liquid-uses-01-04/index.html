@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-store">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>السوائل - الخصائص المشتركة والاستخدامات والتجربة العلمية (الهدف 16)</title>
+<link rel="stylesheet" href="../unit-assets/fonts/fonts.css?v=2026110801">
+  <link rel="stylesheet" href="../unit-css/styles.css?v=2026110801">
+</head>
+<body data-subject-theme="science">
+<div id="stage">
+<div id="app">
+  
+  <!-- Report/issue flag — the APPROVED chrome, copied verbatim from
+       shared/720-core/chrome/chrome-snippets.html. Do not restyle, do not
+       rebuild. The old PNG pair is gone: its hover export was a stale
+       SCIENCE-mode render (#019DE5), which is what made hover look wrong in
+       a maths unit. The glyph is live SVG driven by currentColor. -->
+  <button class="flag-btn" id="flag-btn" type="button" aria-label="هل وجدتم مشكلة؟">
+        <span class="flag-btn-icon">
+          <span class="flag-btn-glyph" aria-hidden="true">
+            <svg class="flag-btn-glyph-pole" viewBox="0 0 0.794329 17.0005" preserveAspectRatio="none" fill="none">
+              <path
+                d="M0.397164 17C0.177722 17 0 16.8239 0 16.6065V0.393501C0 0.176082 0.177722 0 0.397164 0C0.616607 0 0.794329 0.176082 0.794329 0.393501V16.607C0.794329 16.8245 0.616607 17.0005 0.397164 17.0005V17Z"
+                fill="currentColor" />
+            </svg>
+            <svg class="flag-btn-glyph-banner" viewBox="0 0 12 9.31542" preserveAspectRatio="none" fill="none">
+              <path
+                d="M2.76227 9.31542C1.91972 9.31542 1.06958 9.15545 0.213483 8.71363C0.0823588 8.64599 0 8.51124 0 8.36469V0.950975C0 0.814619 0.0715221 0.687925 0.188558 0.615989C0.305594 0.54459 0.45189 0.537611 0.574886 0.598811C0.577053 0.599884 0.578679 0.600958 0.580846 0.602032C2.31309 1.49586 4.05563 1.046 5.90003 0.569821C7.80946 0.0770055 9.78336 -0.431915 11.7865 0.601495C11.9176 0.669136 12 0.803882 12 0.950438V8.36415C12 8.4946 11.9344 8.617 11.8255 8.69001C11.7166 8.76302 11.5774 8.77805 11.4555 8.72974C11.443 8.7249 11.4311 8.71954 11.4197 8.71363C9.68745 7.8198 7.94491 8.26967 6.10051 8.7453C5.00709 9.02714 3.89199 9.31489 2.76281 9.31489L2.76227 9.31542ZM0.793787 8.11935C2.45559 8.87307 4.13094 8.44038 5.90003 7.98407C7.62469 7.53903 9.40191 7.08057 11.2062 7.75806V1.19631C9.54441 0.442591 7.86906 0.875281 6.09997 1.33159C4.37531 1.77663 2.59755 2.23509 0.793787 1.5576V8.11935Z"
+                fill="currentColor" />
+            </svg>
+          </span>
+        </span>
+        <span class="flag-btn-label">هل وجدتم مشكلة؟</span>
+      </button>
+
+  <!-- SCREENS — רכיב 4 · שקופיות 45-57 -->
+
+  <!-- ══ S38 — deck slide 45 · advanced-practice launcher (SectionIntroScreen-
+       LongText → PracticeSetIntro-Character). The deck draws no button; the
+       forward action is the launchers' own. Wingdings smiley → ☺. GIF pose
+       not supplied — base pose. ══ -->
+  <section class="screen" data-screen="38" id="s38">
+    <div class="transition-content ts-content lq-s38">
+      <h1 class="ts-title">وقت لـ 5 أسئلة متقدمة</h1>
+      <h1 class="ts-title">ومفاجآت شيقة أخرى...</h1>
+      <p class="ts-lead">(هذا يعني أننا ارتقينا مستوى ☺)</p>
+      <!-- QA 28.10: the producer's clip, plays once per entry -->
+      <div class="transition-character ts-character char-slot lq-intro-char"><video id="s38-char" class="transition-still" src="assets/video/character-orange-like.mp4" muted playsinline preload="auto" aria-label="الشخصية المرافقة تشير إليكم وترفع إبهامها" data-no-zoom></video></div>
+    </div>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="يمكن البدء!">يمكن البدء!</span></button>
+    <button class="btn-back" onclick="goTo(37)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+
+  <!-- ══ S48 — deck slide 55 · enrichment 1/3 (FullImageWithTextOverlay) ══ -->
+  <section class="screen" data-screen="48" id="s48">
+    <div class="fio-stage">
+      <img class="fio-img lq-fio-top" src="assets/img/pitch-drop-record.jpg" alt='كتاب "GUINNESS WORLD RECORDS" مع عبارة "RECORD HOLDER" و"The longest-running laboratory experiment"، وملصق "1927 ← اليوم". في الخلفية قمع زجاجي على حامل يحتوي على مادة سوداء تتقطر في كأس، ولافتة "THE PITCH DROP EXPERIMENT".' data-no-zoom>
+      <div class="fio-card lq-fio-card"><p><strong>أطول تجربة في العالم!</strong></p><p>تخيّلوا تجربةً بدأت عام 1927 ولا تزال مستمرة حتى اليوم!</p><p>ما يقارب 100 عام من الانتظار، وكل ذلك لرؤية عدد القطرات التي تسقط.</p><p>ما هي هذه التجربة إذن، ولماذا تستغرق كل هذا الوقت الطويل؟</p></div>
+    </div>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(47)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S49 — deck slide 56 · enrichment 2/3. "הדמות עולה בסוף": the monster
+       + bubble enter after the card (p3Stage s49). The background is the
+       producer's 1537px photo (15.10). ══ -->
+  <section class="screen" data-screen="49" id="s49">
+    <div class="fio-stage">
+      <img class="fio-img lq-fio-top" src="assets/img/pitch-pouring.jpg" alt='يسكب عالم يرتدي معطف المختبر مادة سوداء كثيفة داخل قمع زجاجي موضوع على حامل؛ وعلى الطاولة علبة مكتوب عليها "BITUMEN".' data-no-zoom>
+      <div class="fio-card lq-fio-card p3-step-line"><p><strong>قطرة القار</strong></p><p class="lq-nowrap">أراد العالم في التجربة فحص ما إذا كان القار، وهو مادة سوداء شديدة اللزوجة تبدو صلبة، يستطيع<br>مع ذلك أن يجري.</p><p>لاختبار ذلك، قاموا بتسخين القار وصبّوه في قمع زجاجي.</p><p>بعد أن برد القار، فتحوا أسفل القمع وانتظروا ليروا إن كان سيقطر.</p></div>
+    </div>
+    <div class="character-widget p3-step-line">
+      <div class="speech-bubble">في رأيكم، كم من الوقت استغرقت<br>قطرة القار الأولى حتى سقطت؟</div>
+      <img src="../unit-assets/img/character-orange.png" alt="الشخصية المرافقة" data-no-zoom>
+    </div>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(48)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- ══ S50 — deck slide 57 · enrichment 3/3 (TextWithCallout (media=image) →
+       TeachingStep-Figure: text right, photo left). "כ-8 שנים" vs the photo
+       sign's 1938 (11 years) — built as written, flagged. ══ -->
+  <section class="screen" data-screen="50" id="s50">
+    <div class="lq-col-text lq-s50-text">
+      <p>لم تسقط القطرة الأولى إلا بعد <strong>نحو 8 سنوات!</strong><br>ومنذ ذلك الحين، سقطت بضع قطرات إضافية فقط، بفواصل زمنية تبلغ سنوات.</p>
+      <p><strong>كيف يُعقل ذلك؟</strong><br>يمكن للقار أن يجري حتى عند درجة حرارة الغرفة،<br>لكن لزوجته عالية للغاية.<br>ولذلك يجري ببطء شديد،<br>حتى إنه يبدو لنا كأنه جسم صلب.</p>
+      <p><strong class="lq-blue">والتجربة؟ لا تزال مستمرة حتى اليوم.</strong></p>
+    </div>
+    <img class="lq-photo lq-s50-photo" src="assets/img/pitch-museum.jpg" alt='معروض متحفي: قمع زجاجي يحتوي على مادة سوداء، موضوع على حامل، وتسقط منه قطرة في كأس. بجانبه لافتة بعنوان "تجربة قطرة القار"، ورد فيها، من بين أمور أخرى: "سقطت القطرة الأولى عام 1938. ولم تسقط منذ ذلك الحين سوى بضع قطرات."' data-no-zoom>
+    <button class="btn-continue" onclick="advanceScreen()"><span class="nav-label" data-label="متابعة">متابعة</span></button>
+    <button class="btn-back" onclick="goTo(49)"><span class="nav-label" data-label="رجوع">رجوع</span></button>
+  </section>
+
+  <!-- Quiz hint overlay — shared, outside all .screen divs -->
+  <div id="quiz-hint-overlay" class="hidden m-popup" role="dialog" aria-modal="true" aria-label="تلميح">
+    <div class="hint-popup">
+      <!-- 07.09: the bulb the hint card was missing. Plain-bulb variant
+           (viewBox 0 0 20.997 27.9988), the one the approved build uses in
+           the card title — deliberately NOT the button's rayed bulb. The
+           text lives in its own span so quizOpenHint() can rewrite it
+           without deleting the icon. -->
+      <h3 class="hint-title"><svg class="hint-title-icon" viewBox="0 0 40 35" fill="none" aria-hidden="true"><path d="M27.3745 4.25047C25.1822 2.12063 22.3177 1.05696 19.3069 1.25356C13.97 1.6014 9.65119 6.02493 9.25901 11.5398C9.01056 15.0358 10.3137 18.3755 12.8373 20.6995C14.2014 21.9572 14.9857 23.7921 14.9857 25.733H17.2754H22.7293H25.019C25.019 23.8224 25.8351 21.9547 27.26 20.6087C29.4937 18.5016 30.7726 15.4996 30.7726 12.3741C30.7726 9.24868 29.5327 6.34503 27.3721 4.24543L27.3745 4.25047ZM20.0012 8.53033C17.955 8.53033 16.2865 10.2544 16.2865 12.3767C16.2865 13.0295 15.7725 13.5613 15.1416 13.5613C14.5107 13.5613 13.9968 13.0295 13.9968 12.3767C13.9968 8.94874 16.6908 6.16104 20.0012 6.16104C20.6369 6.16104 21.1509 6.69287 21.1509 7.34569C21.1509 7.9985 20.6369 8.53033 20.0012 8.53033Z" fill="white"/><path d="M14.9829 30.1913C14.9829 31.2751 15.3824 32.2934 16.1205 33.0622L16.1448 33.0874C16.8902 33.8612 17.884 34.2896 18.9412 34.2896H21.0604C22.12 34.2896 23.1163 33.8637 23.8641 33.0848C24.6094 32.3136 25.0211 31.2852 25.0211 30.1963V27.6758H14.9829V30.1913ZM17.2726 30.0451H22.7265V30.1963C22.7265 30.6525 22.556 31.0886 22.2418 31.4137C21.93 31.7313 21.5013 31.9204 21.0604 31.9204H18.9412C18.5052 31.9204 18.0911 31.7439 17.7793 31.4314L17.7622 31.4112C17.4504 31.0936 17.2726 30.65 17.2726 30.1938V30.0476V30.0451Z" fill="white"/><path d="M38.8568 11.1914H34.7816C34.1482 11.1914 33.6367 11.7232 33.6367 12.3761C33.6367 13.0289 34.1507 13.5607 34.7816 13.5607H38.8568C39.4901 13.5607 40.0016 13.0289 40.0016 12.3761C40.0016 11.7232 39.4877 11.1914 38.8568 11.1914Z" fill="white"/><path d="M6.36734 12.3761C6.36734 11.7207 5.85338 11.1914 5.22249 11.1914H1.14486C0.511531 11.1914 0 11.7232 0 12.3761C0 13.0289 0.513967 13.5607 1.14486 13.5607H5.22005C5.85338 13.5607 6.36491 13.0289 6.36491 12.3761H6.36734Z" fill="white"/><path d="M32.1095 4.79094C32.3361 4.79094 32.565 4.72036 32.7648 4.57669L36.1043 2.15699C36.6232 1.78143 36.7474 1.04291 36.3845 0.506038C36.0215 -0.0308348 35.3078 -0.161902 34.789 0.216177L31.4494 2.63589C30.9306 3.01145 30.8063 3.74996 31.1693 4.28683C31.3909 4.61702 31.7466 4.79346 32.1095 4.79346V4.79094Z" fill="white"/><path d="M7.23672 20.1824L3.89716 22.6021C3.37832 22.9777 3.25409 23.7162 3.61703 24.2531C3.8387 24.5833 4.19433 24.7597 4.55727 24.7597C4.78381 24.7597 5.01278 24.6891 5.21252 24.5454L8.55209 22.1257C9.07093 21.7502 9.19516 21.0117 8.83221 20.4748C8.46927 19.9379 7.75556 19.8068 7.23672 20.1849V20.1824Z" fill="white"/><path d="M36.1042 22.5989L32.7646 20.1792C32.2457 19.8037 31.532 19.9347 31.1691 20.4691C30.8062 21.006 30.9328 21.7445 31.4492 22.12L34.7888 24.5397C34.9885 24.6859 35.2175 24.754 35.444 24.754C35.8045 24.754 36.1602 24.5776 36.3843 24.2474C36.7472 23.7105 36.6206 22.972 36.1042 22.5964V22.5989Z" fill="white"/><path d="M8.5524 2.63409L5.21283 0.214385C4.69399 -0.161174 3.98028 -0.0301066 3.61734 0.504246C3.2544 1.04112 3.38106 1.77963 3.89746 2.15519L7.23703 4.5749C7.43677 4.72109 7.66574 4.78915 7.89228 4.78915C8.25279 4.78915 8.60842 4.61271 8.83252 4.28252C9.19546 3.74565 9.0688 3.00713 8.5524 2.63157V2.63409Z" fill="white"/></svg><span class="hint-title-text"></span></h3>
+      <p class="hint-body"></p>
+      <button class="hint-close-btn" data-label="العودة إلى السؤال" onclick="quizCloseHint()">العودة إلى السؤال</button>
+    </div>
+  </div>
+
+  <!-- Problem-report modal (approved-units pattern; posts to the shared Google Form) -->
+  <div id="report-modal" class="report-modal-overlay m-popup" hidden role="dialog" aria-modal="true" aria-labelledby="report-modal-title">
+    <div class="report-modal-box">
+      <button class="report-close-btn" onclick="tryCloseReportModal()" aria-label="إغلاق">&#10005;</button>
+      <h2 class="report-modal-title" id="report-modal-title">التبليغ عن مشكلة</h2>
+      <p class="report-modal-body">هل هناك شيء غير واضح أو لا يعمل كما ينبغي؟ أخبرونا بما حدث حتى نتمكن من المعالجة.</p>
+      <div class="report-field">
+        <label class="report-label" for="report-type">ما نوع المشكلة <span class="required-star">*</span></label>
+        <select class="report-select" id="report-type">
+          <option value="" disabled selected>اختاروا نوع المشكلة</option>
+          <option value="technical">عطل تقني أو شيء ما لا يعمل</option>
+          <option value="unclear">هناك شيء لا أفهمه</option>
+          <option value="other">آخر</option>
+        </select>
+      </div>
+      <div class="report-field">
+        <label class="report-label" for="report-text">ماذا حدث؟ <span class="required-star">*</span></label>
+        <textarea class="report-textarea" id="report-text" maxlength="250" rows="4" placeholder="صفوا المشكلة..."></textarea>
+        <span class="report-char-count" id="report-char-count">0 / 250</span>
+      </div>
+      <p class="report-error" id="report-error" hidden>يرجى اختيار نوع المشكلة ووصف ما حدث.</p>
+      <div class="report-actions">
+        <button class="report-submit-btn" onclick="submitReport()">إرسال</button>
+        <button class="report-cancel-btn" onclick="tryCloseReportModal()">إلغاء</button>
+      </div>
+      <div class="report-thanks" id="report-thanks" hidden>
+        <p>شكرًا! تم إرسال التبليغ. سنعالج المشكلة في أقرب وقت.</p>
+        <button class="report-submit-btn" onclick="forceCloseReportModal()">إغلاق</button>
+      </div>
+    </div>
+  </div>
+  <div id="report-confirm-modal" class="report-modal-overlay m-popup" hidden role="dialog" aria-modal="true" aria-labelledby="confirm-modal-title">
+    <div class="report-modal-box report-confirm-box">
+      <h2 class="report-modal-title" id="confirm-modal-title">هل تريدون إغلاق النافذة فعلًا؟</h2>
+      <p class="report-modal-body">إذا ضغطتم على إغلاق لن يتم إرسال التبليغ</p>
+      <div class="report-actions">
+        <button class="report-cancel-btn" onclick="forceCloseReportModal()">إغلاق النافذة</button>
+        <button class="report-submit-btn" onclick="backToReportForm()">أريد التبليغ</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+  
+  <script src="script.js?v=2026110801"></script>
+  <script src="../unit-js/motion.js?v=2026110801"></script>
+  <script src="../unit-js/quiz-engine.js?v=2026110801"></script>
+  <script src="../unit-js/questions.js?v=2026110801"></script>
+  <script src="../unit-js/unit.js?v=2026110801"></script>
+  <script src="../unit-js/report-modal.js?v=2026110801"></script>
+  <script src="../unit-js/engine.js?v=2026110801"></script>
+</body>
+</html>
